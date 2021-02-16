@@ -1,14 +1,17 @@
 <template>
   <div id="app">
     <h1>To-Do List</h1>
+    <to-do-item></to-do-item>
   </div>
 </template>
 
 <script>
-
+import ToDoItem from './components/ToDoItem';
 export default {
   name: 'App',
-  
+  components:{
+    ToDoItem
+  }
 }
 </script>
 
