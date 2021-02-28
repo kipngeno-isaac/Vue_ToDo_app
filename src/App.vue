@@ -1,27 +1,46 @@
 <template>
-  <div id="app">
-    <h1>To-Do List</h1>
-    <to-do-item></to-do-item>
-  </div>
+<!-- App.vue -->
+
+<v-app>
+
+  <v-app-bar 
+  app
+  color = "primary-blue"
+  dark
+  >
+
+  <v-toolbar-title>TODO APP</v-toolbar-title>
+    
+  </v-app-bar>
+
+  <!-- Sizes your content based upon application components -->
+  <v-main>
+
+    <!-- Provides the application the proper gutter -->
+    <v-container fluid>
+
+      <to-do></to-do>
+    </v-container>
+  </v-main>
+
+  <v-footer app>
+    <!-- -->
+  </v-footer>
+</v-app>
 </template>
 
 <script>
-import ToDoItem from './components/ToDoItem';
+import ToDo from './components/ToDoItem.vue';
+
 export default {
   name: 'App',
-  components:{
-    ToDoItem
-  }
-}
-</script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+components:{
+  ToDo
+},
+
+  data: () => ({
+    //
+  }),
+};
+</script>

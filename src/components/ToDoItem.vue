@@ -1,19 +1,17 @@
 <template>
-  <div>
-    <input type="checkbox" id="todo-item" checked="false">
-    <label for="todo-item">My todo itme</label>
-  </div>
+  <v-card pa-5>
+    <v-checkbox
+    v-model="done"
+    ></v-checkbox>
+    <v-card-text>My todo itme</v-card-text>
+    
+  </v-card>
 </template>
 <script>
 export default {
-  props:{
-    label:{
-      required: true,
-      type:String
-    },
-    done:{
-      default: false,
-      type:Boolean
+  data(){
+    return {
+      done:true
     }
   }
 }

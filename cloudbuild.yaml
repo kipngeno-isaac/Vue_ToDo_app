@@ -1,0 +1,16 @@
+steps:
+# install
+- name: 'gcr.io/cloud-builders/npm'
+  args: ['install']
+
+# test
+- name: 'gcr.io/cloud-builders/npm'
+  args: ['run', 'test']
+
+# build
+- name: 'gcr.io/cloud-builders/npm'
+  args: ['run', 'build']
+
+# deploy
+- name: 'gcr.io/vue-todo-app-306115/firebase'
+  args: ['deploy']
