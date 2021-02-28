@@ -12,5 +12,5 @@ steps:
   args: ['run', 'build']
 
 # deploy
-- name: 'gcr.io/Vue-ToDo-app/firebase'
+- name: 'gcr.io/vue-todo-app-306115/firebase'
   args: ['deploy']
