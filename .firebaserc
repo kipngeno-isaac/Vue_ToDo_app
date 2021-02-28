@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "vue-todo-app-306115"
+    "default": "vue-todo-app-306115",
+    "staging": "vue-todo-app-306115"
   }
 }
